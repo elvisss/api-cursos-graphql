@@ -1,0 +1,16 @@
+mutation createNewMonitor($monitorinput: PersonInput!) {
+  createPerson(input: $monitorinput) {
+    _id
+    name
+    phone
+  }
+}
+
+# QueryVariables
+{
+  "monitorinput": {
+    "name": "Monitor 1",
+    "email": "monitor1@gmail.com",
+    "phone": "123456789"
+  }
+}

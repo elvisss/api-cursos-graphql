@@ -1,0 +1,15 @@
+query GetCourse ($course: ID!) {
+  getCourse(id: $course) {
+    _id
+    title
+    people {
+      _id
+      name
+    }
+  }
+}
+
+#Query Variables
+{
+  "course": "5f0a59cb9f0c793ccd257c4a"
+}

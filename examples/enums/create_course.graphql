@@ -1,0 +1,19 @@
+mutation CreateNewCourse($createInput: CourseInput!) {
+  createCourse(input: $createInput) {
+    _id
+    title
+    level
+  }
+}
+
+# Query Variables
+
+{
+  "createInput": {
+    "title": "Nuevo título",
+    "teacher": "Profesor 1",
+    "description": "Curso ejemplo",
+    "topic": "programacion",
+    "level": "principiante1"
+  }
+}
