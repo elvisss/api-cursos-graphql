@@ -10,7 +10,7 @@ type Course {
   title: String!
   description: String!
   teacher: String
-  topic: String
+  topic: String @deprecated
   people: [Student]
   level: Level
 }

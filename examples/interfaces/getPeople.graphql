@@ -1,0 +1,14 @@
+{
+  getPeople {
+    _id
+    name
+    email
+    __typename
+    ... on Monitor {
+      phone
+    }
+    ... on Student {
+      avatar
+    }
+  }
+}
