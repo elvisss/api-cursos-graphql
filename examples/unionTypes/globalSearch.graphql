@@ -1,0 +1,20 @@
+# createIndexes
+# db.<collection>.createIndex({"$**": "text"})
+
+{
+  searchItems(keyword: "elvi") {
+    __typename
+    ... on Course {
+      title
+      description
+    }
+    ... on Monitor {
+      name
+      phone
+    }
+    ... on Student {
+      name
+      email
+    }
+  }
+}
