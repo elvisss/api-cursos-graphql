@@ -1,15 +1,21 @@
 {
-  "name": "platzi-dir",
+  "name": "api-cursos-graphql",
   "version": "1.0.0",
-  "description": "",
+  "description": "API de cursos usando GraphQL",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.1"
+  },
   "scripts": {
     "start": "SET NODE_ENV=production&&node index",
     "dev": "nodemon -e js,graphql index",
     "lint": "standard",
     "lint-fix": "standard --fix"
   },
-  "keywords": [],
+  "keywords": [
+    "graphql",
+    "node"
+  ],
   "author": "Elvis Saavedra Segura <elvis.saavedra.segura@gmail.com>",
   "license": "MIT",
   "dependencies": {
